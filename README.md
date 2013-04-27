@@ -17,5 +17,12 @@ Steps to reproduce:
 	Result : The test passes.
 
 
+
+Details of the error message :
+java.lang.RuntimeException: Error writing to file: some-dir/target/generated-resources/stuff.xmlwith the following error: 
+Couldn't create dir: some-dir\target\generated-resources
+        at com.test.build.TestFileCreation.createDirectoryTest(TestFileCreation.
+
+
 So the Question is : Why does the Autorun entry affect a java process ?!
 
