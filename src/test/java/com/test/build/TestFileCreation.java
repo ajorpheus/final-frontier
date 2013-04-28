@@ -14,6 +14,8 @@ public class TestFileCreation {
 			File targetFile = new File(DIR_PATH);
 			File parent = targetFile.getParentFile();
 
+			showCurrentWorkingDir();
+
 			if (!parent.exists() && !parent.mkdirs()) {
 				throw new IllegalStateException("Couldn't create dir: " + parent);
 			}
@@ -24,6 +26,11 @@ public class TestFileCreation {
 		}
 	}
 
+	private void showCurrentWorkingDir() {
+		System.out.println("\n**********************************************");
+		System.out.println("Current Dir: " + new File("./").getAbsolutePath());
+		System.out.println("**********************************************\n");
+	}
 
 
 }
